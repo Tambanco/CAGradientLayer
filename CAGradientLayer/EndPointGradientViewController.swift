@@ -8,9 +8,50 @@
 import UIKit
 
 class EndPointGradientViewController: UIViewController {
+    
+    private let endPointGradient: CAGradientLayer = {
+        let layer = CAGradientLayer()
+        return layer
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        setupEndPointGradient()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        endPointGradient.frame = self.view.bounds
+    }
+    
+    private func setupEndPointGradient() {
+//        endPointGradient.colors = [UIColor.red.cgColor,
+//                                   UIColor.yellow.cgColor,
+//                                   UIColor.green.cgColor,
+//                                   UIColor.blue.cgColor]
+        
+        endPointGradient.colors = [UIColor.red.cgColor,
+                                   UIColor.green.cgColor]
+        
+        // - location
+        endPointGradient.locations = [0.4, 0.6]
+        
+//        // - from up-left to down-right
+//        endPointGradient.startPoint = CGPoint(x: 0,y: 0)
+//        endPointGradient.endPoint = CGPoint(x: 1,y: 1)
+//
+//        // - from up-right to down-left
+//        endPointGradient.startPoint = CGPoint(x: 1,y: 0)
+//        endPointGradient.endPoint = CGPoint(x: 0,y: 1)
+        
+//        // - from down-left to up-right
+//        endPointGradient.startPoint = CGPoint(x: 0,y: 1)
+//        endPointGradient.endPoint = CGPoint(x: 1,y: 0)
+        
+//        // - from down-right to up-left
+//        endPointGradient.startPoint = CGPoint(x: 1,y: 1)
+//        endPointGradient.endPoint = CGPoint(x: 0,y: 0)
+        
+        self.view.layer.insertSublayer(endPointGradient, at: 0)
     }
 }
