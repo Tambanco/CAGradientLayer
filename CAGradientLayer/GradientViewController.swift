@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class GradientViewController: UIViewController {
     
     //1 - create layer
     let gradientLayer: CAGradientLayer = {
@@ -33,6 +33,9 @@ class ViewController: UIViewController {
                                 UIColor.yellow.cgColor,
                                 UIColor.green.cgColor,
                                 UIColor.blue.cgColor]
+        
+        // - transform if needed
+        gradientLayer.transform = CATransform3DMakeRotation(CGFloat.pi / 2, 0, 0, 1)
         
         //3 - place layer inside parent layer
         self.view.layer.insertSublayer(gradientLayer, at: 0)
