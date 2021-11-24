@@ -13,6 +13,7 @@
 		49F2F524274E45AE003942FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49F2F523274E45AE003942FB /* Assets.xcassets */; };
 		49F2F527274E45AE003942FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49F2F525274E45AE003942FB /* LaunchScreen.storyboard */; };
 		49F2F531274E577D003942FB /* EndPointGradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F2F530274E577D003942FB /* EndPointGradientViewController.swift */; };
+		49F2F53B274E64D0003942FB /* HexToUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F2F53A274E64D0003942FB /* HexToUIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		49F2F526274E45AE003942FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49F2F528274E45AE003942FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49F2F530274E577D003942FB /* EndPointGradientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointGradientViewController.swift; sourceTree = "<group>"; };
+		49F2F53A274E64D0003942FB /* HexToUIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexToUIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +62,20 @@
 				49F2F51C274E45AC003942FB /* SceneDelegate.swift */,
 				49F2F51E274E45AC003942FB /* GradientViewController.swift */,
 				49F2F530274E577D003942FB /* EndPointGradientViewController.swift */,
+				49F2F537274E63EB003942FB /* Utils */,
 				49F2F523274E45AE003942FB /* Assets.xcassets */,
 				49F2F525274E45AE003942FB /* LaunchScreen.storyboard */,
 				49F2F528274E45AE003942FB /* Info.plist */,
 			);
 			path = CAGradientLayer;
+			sourceTree = "<group>";
+		};
+		49F2F537274E63EB003942FB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				49F2F53A274E64D0003942FB /* HexToUIColor.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +152,7 @@
 				49F2F531274E577D003942FB /* EndPointGradientViewController.swift in Sources */,
 				49F2F51B274E45AC003942FB /* AppDelegate.swift in Sources */,
 				49F2F51D274E45AC003942FB /* SceneDelegate.swift in Sources */,
+				49F2F53B274E64D0003942FB /* HexToUIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

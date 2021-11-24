@@ -25,20 +25,16 @@ class EndPointGradientViewController: UIViewController {
     }
     
     private func setupEndPointGradient() {
-//        endPointGradient.colors = [UIColor.red.cgColor,
-//                                   UIColor.yellow.cgColor,
-//                                   UIColor.green.cgColor,
-//                                   UIColor.blue.cgColor]
+        endPointGradient.colors = [hexStringToUIColor(hex: "#2193b0").cgColor,
+                                   hexStringToUIColor(hex: "#6dd5ed").cgColor]
         
-        endPointGradient.colors = [UIColor.red.cgColor,
-                                   UIColor.green.cgColor]
+
+//        // - location
+//        endPointGradient.locations = [0.4, 0.6]
         
-        // - location
-        endPointGradient.locations = [0.4, 0.6]
-        
-//        // - from up-left to down-right
-//        endPointGradient.startPoint = CGPoint(x: 0,y: 0)
-//        endPointGradient.endPoint = CGPoint(x: 1,y: 1)
+        // - from up-left to down-right
+        endPointGradient.startPoint = CGPoint(x: 0,y: 0)
+        endPointGradient.endPoint = CGPoint(x: 1,y: 1)
 //
 //        // - from up-right to down-left
 //        endPointGradient.startPoint = CGPoint(x: 1,y: 0)

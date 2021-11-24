@@ -18,7 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                window?.windowScene = windowScene
 //               window?.rootViewController = GradientViewController()
             window?.rootViewController = EndPointGradientViewController()
-               window?.backgroundColor = UIColor.green
+               window?.backgroundColor = UIColor.black
                window?.makeKeyAndVisible()
         guard let _ = (scene as? UIWindowScene) else { return }
     }
